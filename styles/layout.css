@@ -8,10 +8,24 @@
     "side content content content content content content content"
     "ft ft ft ft ft ft ft ft";
 }
+
+.layout-subscribe {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas:
+    "hd"
+    "content"
+    "ft";
+}
+
 .header {
   grid-area: hd;
   border-bottom: 1px solid #a9a9a9;
+  text-align: center;
 }
+
 .footer {
   color: #fff;
   border-top: 1px solid #a9a9a9;
@@ -21,15 +35,18 @@
   display: flex;
   justify-content: space-between;
 }
+
 .content {
   overflow-y: auto;
   padding: 0px 5px;
   grid-area: content;
 }
+
 .sidebar {
   padding: 0px 5px;
   grid-area: side;
 }
+
 .footer-subscribe {
   font-size: 14px;
   color: #c4c4c4;
@@ -44,12 +61,15 @@
       "content"
       "ft";
   }
+
   .content {
     padding: 0px 10px;
   }
+
   .sidebar {
     display: none;
   }
+
   .footer {
     justify-content: unset;
     flex-direction: column;

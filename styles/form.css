@@ -6,3 +6,9 @@ form {
 form h2 {
   margin-bottom: 20px;
 }
+
+input {
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
+}
