@@ -1,0 +1,80 @@
+.nav_title {
+  color: #3e3e3e;
+  font-size: 18px;
+}
+
+.home-post {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #3e3e3e;
+  background-color: #c4c4c4;
+}
+
+.home-post:hover {
+  opacity: 0.9;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.home-post-image {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.home-post-date {
+  font-size: 12px;
+}
+
+.home-post-content {
+  padding: 10px;
+}
+
+.home-post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home-post-title h3 {
+  margin: 0;
+}
+
+.home-post-text {
+  max-height: 104px;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  padding-right: 1rem;
+}
+.home-post-text::before {
+  position: absolute;
+  content: "...";
+  /*   inset-block-end: 0;
+    inset-inline-end: 0; */
+  bottom: 0px;
+  right: 9px;
+}
+.home-post-text::after {
+  content: "";
+  position: absolute;
+  /*   inset-inline-end: 0; */
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+}
+
+.home-video-button {
+  display: flex;
+  align-items: center;
+}
+
+.home-video-button a {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .home-video-button {
+    margin-bottom: 20px;
+  }
+}

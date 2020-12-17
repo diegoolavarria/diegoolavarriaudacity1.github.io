@@ -1,0 +1,52 @@
+.post-author {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 100px auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  grid-template-areas:
+    "avatar info"
+    "bio bio";
+}
+
+.author-avatar-container {
+  grid-area: avatar;
+}
+
+.author-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  grid-area: info;
+}
+
+.author-studies {
+  color: #909090;
+  font-size: 12px;
+}
+
+.author-bio {
+  align-self: start;
+  grid-area: bio;
+  font-size: 14px;
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+  .post-author {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+      "avatar"
+      "info"
+      "bio";
+  }
+}
