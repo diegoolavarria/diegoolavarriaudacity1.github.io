@@ -19,7 +19,7 @@
   padding: 10px;
   grid-area: ft;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 .content {
   overflow-y: auto;
@@ -29,6 +29,10 @@
 .sidebar {
   padding: 0px 5px;
   grid-area: side;
+}
+.footer-subscribe {
+  font-size: 14px;
+  color: #c4c4c4;
 }
 
 @media (max-width: 768px) {
@@ -45,5 +49,10 @@
   }
   .sidebar {
     display: none;
+  }
+  .footer {
+    justify-content: unset;
+    flex-direction: column;
+    text-align: center;
   }
 }
